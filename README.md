@@ -17,14 +17,20 @@ kubectl get secret --namespace Logging grafana -o jsonpath="{.data.admin-passwor
 kubectl port-forward service/grafana 3000:80
 
 
-![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/43db0ae1-9e7e-41b1-8daf-8fb22d967f71)
+![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/24e1d0f8-c4b1-4a71-a7a7-039f112779fd)
+
 
 Now head over to Data sources and and choose google-cloud-logging-datasource
 
-![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/f79a8942-cdf2-42da-a8a4-8c6795bf5974)
+
+![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/43db0ae1-9e7e-41b1-8daf-8fb22d967f71)
 
 Add Json file in data Source section (Create a service account and give GKE full access and Create json key)
 save and test 
+
+![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/f79a8942-cdf2-42da-a8a4-8c6795bf5974)
+
+
 Our grafana is communicating with Google cloud Logging resource 
 ######
 Lets Explore our added data source 
