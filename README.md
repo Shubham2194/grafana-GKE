@@ -1,4 +1,4 @@
-# Logging with google cloud logging plugin with grafana for GKE #
+# Logging with google cloud logging plugin and grafana for GKE #
 
 ##################### Install grafana Using Helm ##################################################################
 
@@ -11,11 +11,12 @@ helm repo update
 helm install grafana grafana/grafana --set persistence.enabled=true,persistence.size=10Gi
 
 
-#Get admin password
+#Get admin password#
+
 kubectl get secret --namespace Logging grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 
 
-#Access Grafana dashboard using port forward
+#Access Grafana dashboard using port forward#
 
 kubectl port-forward service/grafana 3000:80
 
@@ -39,7 +40,7 @@ We can see now in Data sources section Google cloud Logging has been added as de
 
 
 Our grafana is communicating with Google cloud Logging resource 
-######
+##################################################################################################
 Lets Explore our added data source 
 Look after Explore section and Choose google-cloud-logging-datasource as source(if not fluctuate)
 
