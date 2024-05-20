@@ -62,7 +62,7 @@ resource.labels.container_name= "nginx"
 
 severity>=DEFAULT
 
-You can also create dashboard with this query ,to view LOGS diretly there.
+You can also create dashboard with this query ,to view LOGS directly there.
 
 In Explore section Choose Add to dashboard and You are done !!! 
 
