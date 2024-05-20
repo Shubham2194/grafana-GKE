@@ -32,6 +32,8 @@ save and test  (turn on as default )
 ![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/43db0ae1-9e7e-41b1-8daf-8fb22d967f71)
 
 
+We can see now in Data sources section Google cloud Logging has been added as default source.
+
 
 ![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/f79a8942-cdf2-42da-a8a4-8c6795bf5974)
 
@@ -39,7 +41,7 @@ save and test  (turn on as default )
 Our grafana is communicating with Google cloud Logging resource 
 ######
 Lets Explore our added data source 
-Look after Explore section and Choose google-cloud-logging-datasource as source 
+Look after Explore section and Choose google-cloud-logging-datasource as source(if not fluctuate)
 
 ![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/70774554-9a0f-4911-98b3-1be2b49ae622)
 
