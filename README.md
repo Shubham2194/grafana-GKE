@@ -16,13 +16,15 @@ kubectl get secret --namespace Logging grafana -o jsonpath="{.data.admin-passwor
 
 
 #Access Grafana dashboard using port forward
+
 kubectl port-forward service/grafana 3000:80
-Lets add new 
+
+
 
 ![image](https://github.com/Shubham2194/grafana-GKE/assets/83746560/24e1d0f8-c4b1-4a71-a7a7-039f112779fd)
 
 
-Now head over to Data connection , install it and and choose google-cloud-logging-datasource as new connection 
+Now head over to Connections> Add new connection (install it) and and choose google-cloud-logging-datasource as new connection 
 Add Json file in jwt section (Create a service account on GCP and give GKE full access and Create json key) and choose this key.
 save and test  (turn on as default )
 
