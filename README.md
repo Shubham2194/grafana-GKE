@@ -55,5 +55,8 @@ resource.labels.namespace_name="nginx"
 resource.labels.container_name= "nginx"
 severity>=DEFAULT
 
-You can algo Add and create dashboard with the query ,to view lOGS diretly there 
+You can also create dashboard with this query ,to view lOGS diretly there.
+
 In Explore section Choose Add to dashboard and You are done !!! 
+
+CHEERS :)
