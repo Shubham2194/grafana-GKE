@@ -49,11 +49,17 @@ Look after Explore section and Choose google-cloud-logging-datasource as source(
 QUERY >>
 
 resource.type="k8s_container"
+
 resource.labels.project_id="XYZ"
+
 resource.labels.location="asia-southeast1"
+
 resource.labels.cluster_name="dev-gke"
+
 resource.labels.namespace_name="nginx"
+
 resource.labels.container_name= "nginx"
+
 severity>=DEFAULT
 
 You can also create dashboard with this query ,to view lOGS diretly there.
